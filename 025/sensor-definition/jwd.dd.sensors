@@ -1,0 +1,9 @@
+Number of sensors: 8	8
+1	Rain Intensity	KCR.JWD.RRR.SUM.001.AVG	NF
+2	Liquid Water Content	KCR.JWD.LWC._.001.AVG	DN
+3	Radar reflectivity	KCR.JWD.RRF._.001.AVG	ZR
+4	Power per area and time	KCR.JWD.PAT.INT.001._	KEDE
+5	Marshall Palmer intercept parameter (N0)	KCR.JWD.MPN._.001.AVG	NO
+6	Marshall Palmer decay parameter (lambda)	KCR.JWD.MPL._.001.AVG	LA
+7	Total number of drops on instrument per time	KCR.JWD.TNT._.001._	NO
+8	Rain Sum	KCR.JWD.RRR._.001.SUM	N
