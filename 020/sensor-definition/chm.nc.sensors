@@ -1,0 +1,5 @@
+Number of sensors: 3	3
+1	beta_raw	KCR.CHM.B.BCO.001.PROF	NO	range	NO
+2	cbh	KCR.CHM.H.CBH.001.AVG	NO	layer	NO
+3	cdp	KCR.CHM.H.PEN.001.AVG	NO	layer	NO
+4	vor	KCR.CHM.H.VV.001.AVG	NO
