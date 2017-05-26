@@ -6,22 +6,26 @@ from datetime import datetime
 # us a more scalable reader. - NTJ
 
 # Fetch data definitions
-SENSOR_DEF = []
+SENSOR_DEF = {}
 
 
 with open('./sensor-definition/jwd.rd.sensors') as f:
     sensor_data = f.readlines()
 
-    # removes the first line 
-    sensor_data.pop(0)
     for item in sensor_data:
-        SENSOR_DEF.append(item.split("\t"))
+        line_list = item.split("\t")
+        SENSOR_DEF[line_list[0].strip()] = line_list[1].strip()
 
+
+print SENSOR_DEF
 
 with open('./data/rd160715_small') as f:
     lines = f.readlines()
     for i, line in enumerate(lines):
 
+        # rd files does not consist of header
+        # We will not perform raw data index here
+        
         # Condition to skip the information header
         if line.strip()[0] == "#":
             continue
@@ -36,7 +40,8 @@ with open('./data/rd160715_small') as f:
         # read data only if sensor_definition matches data
         if (len(SENSOR_DEF) == len(data)):
             for k, datum in enumerate(data):
-                print k, ": ", SENSOR_DEF[k][2], " => ", datum.strip()
+                key = "Class "+ str(k+1)
+                print k, ": ", SENSOR_DEF[key], " => ", datum.strip()
 
         else:
             print("Error: Data structure mismatch between sensor definition and data.")
