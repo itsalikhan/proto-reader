@@ -32,7 +32,6 @@ with open("./sensor-definition/chm.nc.sensors") as f:
         sensor_data.pop(0)
         for item in sensor_data:
             current_line = item.split("\t")
-            print len(current_line), current_line
             if len(current_line) == 4:
                 # this section deals with 1D data
                 data[time_since_epoch][current_line[2]] = {}
@@ -57,7 +56,6 @@ with open("./sensor-definition/chm.nc.sensors") as f:
         # uncomment this to read all 100 lines. - NTJ
         break
         
-#print data
 pp = pprint.PrettyPrinter(indent=4)
 pp.pprint(data)
 
