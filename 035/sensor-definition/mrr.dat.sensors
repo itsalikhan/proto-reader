@@ -1,0 +1,9 @@
+Number of sensors: 8	8
+1	Velocity of Hydrometeors	MRR.MRR.V.ZWV.001.PROF	NO	AGL	NO
+2	Radar Reflectivity	MRR.MRR.Z.Z.001.PROF	NO	AGL	NO
+3	Rain Intensity	MRR.MRR.N.NI.001.PROF	NO	AGL	NO
+4	Liquid Water Content	MRR.MRR.M.LW.001.PROF	NO	AGL	NO
+5	Marshall Palmer intercept parameter (N0)	MRR.MRR.O.ND.001.PROF	NO	AGL	NO
+6	Marshall Palmer decay parameter (lambda)	MRR.MRR.H.ND.001.PROF	NO	AGL	NO
+7	Total number of drops	MRR.MRR.O.NUM.001.PROF	NO	AGL	NO
+8	Path Integrated Attenuation	MRR.MRR.A.PIA.001.PROF	NO	AGL	NO
